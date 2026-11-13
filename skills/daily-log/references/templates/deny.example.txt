@@ -1,0 +1,4 @@
+# One entry per line. A literal (case-insensitive) or re:<regex>.
+# Examples:
+# Project Falcon
+# re:cust-\d{4}

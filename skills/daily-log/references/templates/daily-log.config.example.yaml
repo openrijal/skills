@@ -1,0 +1,55 @@
+# Written by daily-log-setup. Lives outside the skill folder so updates never overwrite it.
+# Keep your own comments. The runner reads this file and rules.md every run.
+version: 1
+
+user:
+  name: "Your Name"
+  timezone: "America/Chicago"      # IANA name
+
+notes:
+  tool: obsidian                   # obsidian | logseq | markdown | other
+  vault: "~/Notes"
+  layout: iparaw                   # keep | para | iparaw | plain
+  daily_dir: "4-Archives/Logs/Daily"
+  weekly_dir: "4-Archives/Logs/Weekly"
+  filename: "YYYY-MM-DD.md"
+  template: builtin                # builtin, or a path to your own template
+
+window:
+  mode: previous_day               # previous_day | since_last_note
+  max_hours: 24
+
+sources:
+  sessions:                        # every path was listed on this machine during setup
+    - { agent: claude-code, path: "~/.claude/projects", verified: "2026-11-13" }
+    - { agent: codex, path: "~/.codex/sessions", verified: "2026-11-13" }
+  connectors:                      # read-only. Name the tool you actually have.
+    github: { enabled: true, via: gh, scope: "my repos", include: [prs_authored, prs_reviewed, commits] }
+    slack: { enabled: false }
+    jira: { enabled: false }
+    calendar: { enabled: false }
+    email: { enabled: false }
+    git_logs: { enabled: true, repos: ["~/code"] }
+  off_limits: []                   # folders or projects the log must never read
+
+redaction:
+  deny_list: deny.txt              # one literal or re:<regex> per line, next to this file
+
+weekly_rollup:
+  enabled: true
+  day: friday
+
+wiki:                              # used by the wiki-synthesis skill. Only for layouts with a wiki folder.
+  enabled: true
+  style: karpathy                  # karpathy | gbrain | none
+  dir: "5-Wiki"
+  inbox_dir: "0-Inbox"             # never read for synthesis, never written with logs
+  schedule: "weekly sunday"        # a hint for the scheduler you chose; the skill does not schedule itself
+
+quiet_day: one_line                # one_line | skip
+
+git:
+  commit: true                     # commit only the note paths
+  push: false                      # push only if you set this to true yourself
+
+rules_file: rules.md

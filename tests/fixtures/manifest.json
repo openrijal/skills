@@ -1,0 +1,39 @@
+{
+ "secrets": [
+  "AKIA<<>>IOSFODNN7EXAMPLE",
+  "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+  "ghp_<<>>FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "gho_<<>>FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "github_pat_<<>>FAKEFAKEFAKEFAKEFAKE_FAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "sk-<<>>FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "sk-proj-<<>>FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "sk-ant-<<>>api03-FAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE",
+  "xoxb-<<>>000000000000-000000000000-FAKEFAKEFAKEFAKEFAKEFAKE",
+  "xoxp-<<>>000000000000-000000000000-000000000000-FAKEFAKEFAKEFAKE",
+  "xapp-<<>>1-A0000000000-0000000000000-FAKEFAKEFAKEFAKEFAKE",
+  "AIza<<>>SyFAKEFAKEFAKEFAKEFAKEFAKEFAKEFAKE0",
+  "sk_live_<<>>FAKEFAKEFAKEFAKEFAKEFAKE",
+  "eyJ<<>>hbGciOiJIUzI1NiJ9.eyJzdWIiOiJmYWtlLXVzZXIifQ.FAKEsignatureFAKE123",
+  "FAKEbearer<<>>TOK<<>>EN0123456789abcdef",
+  "ZmFrZXVzZXI6ZmFrZXBhc3N3b3JkMTIz",
+  "FAKEpassw0rd99",
+  "hunter2hunter2",
+  "FAKEenvTokenValue123",
+  "FAKEclientSecretValue456",
+  "k9Zx3Qw7Lm2Vb8Nc4Rt6Yh1Jd5Fs0GaPe3UiOq",
+  "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQFAKEFAKEFAKE"
+ ],
+ "deny": [
+  "Project Falcon",
+  "acme-4821"
+ ],
+ "keep": [
+  "I fixed the retry bug and opened https://github.com/acme/widget-api/pull/42 for review.",
+  "Commit 3f786850e387550fdab836ed7e6dc881de23001b is on main: https://github.com/acme/widget-api/commit/3f786850e387550fdab836ed7e6dc881de23001b",
+  "Branch feature/improve-retry-backoff-for-flaky-network-calls-in-worker was merged.",
+  "Session id 123e4567-e89b-12d3-a456-426614174000 is not a secret.",
+  "See https://docs.example.com/guides/getting-started-with-the-widget-api-v2-and-webhooks-2026 for details.",
+  "Token budget for the run was 40k and the password policy doc is in Resources/Security.md.",
+  "File: /home/sam/projects/widget-api/src/services/notification-dispatcher/index.ts"
+ ]
+}
